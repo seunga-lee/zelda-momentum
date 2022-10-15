@@ -36,18 +36,18 @@
         </div>
         <div class="nav-bar__columns">
             <div class="nav-bar__column nav-bar__title">
-                <button class="nav-bar__column-main">메인</button>
-                <button class="nav-bar__column-quest">퀘스트</button>
                 <button class="nav-bar__column-info title-selected">내 정보</button>
+                <button class="nav-bar__column-quest">퀘스트</button>
+                <button class="nav-bar__column-main">메인</button>
             </div>
             <div class="nav-bar__column">
-                <button class="main-screen button-blur">
+                <button class="my-info-screen ">
 
                 </button>
                 <button class="quest-screen button-blur">
                     
                 </button>
-                <button class="my-info-screen">
+                <button class="main-screen button-blur">
                     
                 </button>
             </div>
@@ -58,54 +58,125 @@
         </div>
     </nav>
 
-    <main>
-
-        <div class="my-info">
-            <h1 class="my-info__welcom"></h1>
-            <div class="my-info__default">
-                <h3 class="my-info__default-title">내 기본정보</h3>
-                <div class="my-info__default-box">
-                    <div class="default-box__column">
-                        <p class="default-box__column-title">
-                            시간
-                        </p>
-                        <p class="default-box__column-title">
-                            위치
-                        </p>
-                        <p class="default-box__column-title">
-                            온도
-                        </p>
-                        <p class="default-box__column-title">
-                            날씨
-                        </p>      
-                    </div>
-                    <div class="default-box__column">
-                        <p class="default-box__column-subtitle time">
-                            00:00:00
-                        </p>
-                        <p class="default-box__column-subtitle locate">
-                            위치정보없음
-                        </p>
-                        <p class="default-box__column-subtitle degree">
-                            온도정보없음
-                        </p>
-                        <p class="default-box__column-subtitle weather">
-                            날씨정보없음
-                        </p>
-                    </div>
-                    
+    <div class="music">
+        <div class="music__column">
+            <<
+        </div>
+        <div class="music__column">
+            <div class="music__control">
+                <i class="fa-solid fa-backward"></i>
+                <div class="music__play-pause">
+                    <i class="fa-solid fa-play"></i>
+                    <!-- <i class="fa-solid fa-pause"></i> -->
                 </div>
-                <div class="default-box__error">
-                    <span class="alert">!</span>
-                    <span>위치 정보를 취득하지 못했습니다.</span>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            <h3>Music Title</h3>
+        </div>
+
+    </div>
+
+
+    <main>
+        
+        <div class="main-windows">
+            <div class="my-info">
+                <h1 class="my-info__welcom"></h1>
+                <div class="my-info__default">
+                    <h3 class="my-info__default-title">내 기본정보</h3>
+                    <div class="my-info__default-box">
+                        <div class="default-box__column">
+                            <p class="default-box__column-title">
+                                시간
+                            </p>
+                            <p class="default-box__column-title">
+                                위치
+                            </p>
+                            <p class="default-box__column-title">
+                                온도
+                            </p>
+                            <p class="default-box__column-title">
+                                날씨
+                            </p>      
+                        </div>
+                        <div class="default-box__column">
+                            <p class="default-box__column-subtitle time">
+                                00:00:00
+                            </p>
+                            <p class="default-box__column-subtitle locate">
+                                위치정보없음
+                            </p>
+                            <p class="default-box__column-subtitle degree">
+                                온도정보없음
+                            </p>
+                            <p class="default-box__column-subtitle weather">
+                                날씨정보없음
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="default-box__error">
+                        <span class="alert">!</span>
+                        <span>위치 정보를 취득하지 못했습니다.</span>
+                    </div>
+                </div>
+            </div>       
+
+            <div class="quest">
+                <div class="quest__columns"></div>
+                <div class="quest__columns">
+                    <h1 class="quest__input-title">오늘의 퀘스트를 입력해주세요</h1>
+                    <form action="" class="quest__input-form">
+                        <input type="text" max-length="17" class=quest__input>
+                        <button class="quest__input-button">추가</button>
+                    </form>
+                </div>
+                <div class="quest__columns"></div>
+                <div class="quest__columns">
+                    <div class="input-quest">
+                        <h1>퀘스트</h1>
+                    </div>
+                    <div class="input-quest__contents">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="main__main">
+                <div class="main__ahref">
+                    <div class="main__ahref-title">
+                        <h1>다른 서비스 바로가기</h1>
+                    </div>
+                    <div class="main__ahref-contests">
+                        <a href="https://www.youtube.com/" target="_blank">유튜브</a>
+                        <a href="https://www.google.co.kr/" target="_blank">구글</a>
+                        <a href="https://www.naver.com/" target="_blank">네이버</a>
+                        <a href="https://www.netflix.com/browse" target="_blank">넷플릭스</a>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <h1 class="book-title">
+                        <span>오늘의 책</span>
+                        <span class="reload-book">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </span>
+                    </h1>
+
+                    <div class="book-contents">
+                        <p></p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
+        
         
     </main>
+
 
     <div class="control-box hide">
         <span>로그아웃</span>
@@ -117,5 +188,6 @@
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/screen-control.js"></script>
+    <script src="js/book.js"></script>
 </body>
 </html>

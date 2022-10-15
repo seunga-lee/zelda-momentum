@@ -35,8 +35,8 @@ questTitle.addEventListener('click', function(){
     mainButton.classList.add('button-blur');
     infoButton.classList.add('button-blur');
     questButton.classList.remove('button-blur');
-    screen.style.transform = 'translateX(100vw)';
-    navTitleWidth.style.transform = 'translateX(64px)';
+    screen.style.transform = 'translateX(-100vw)';
+    navTitleWidth.style.transform = 'translateX(-50px)';
     currentScreen = 2;
 })
 
@@ -48,8 +48,8 @@ mainTitle.addEventListener('click', function(){
     questButton.classList.add('button-blur');
     infoButton.classList.add('button-blur');
     mainButton.classList.remove('button-blur');
-    screen.style.transform = 'translateX(200vw)';
-    navTitleWidth.style.transform = 'translateX(114px)';
+    screen.style.transform = 'translateX(-200vw)';
+    navTitleWidth.style.transform = 'translateX(-90px)';
     currentScreen = 3;
 })
 
@@ -74,8 +74,8 @@ questButton.addEventListener('click', function(){
     mainButton.classList.add('button-blur');
     infoButton.classList.add('button-blur');
     questButton.classList.remove('button-blur');
-    screen.style.transform = 'translateX(100vw)';
-    navTitleWidth.style.transform = 'translateX(64px)';
+    screen.style.transform = 'translateX(-100vw)';
+    navTitleWidth.style.transform = 'translateX(-50px)';
     currentScreen = 2;
 })
 
@@ -87,7 +87,7 @@ mainButton.addEventListener('click', function(){
     questButton.classList.add('button-blur');
     infoButton.classList.add('button-blur');
     mainButton.classList.remove('button-blur');
-    screen.style.transform = 'translateX(200vw)';
-    navTitleWidth.style.transform = 'translateX(114px)';
+    screen.style.transform = 'translateX(-200vw)';
+    navTitleWidth.style.transform = 'translateX(-90px)';
     currentScreen = 3;
 })
