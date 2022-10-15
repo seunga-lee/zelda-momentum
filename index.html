@@ -61,55 +61,48 @@
     <main>
 
         <div class="my-info">
-
             <h1 class="my-info__welcom"></h1>
-
             <div class="my-info__default">
-
                 <h3 class="my-info__default-title">내 기본정보</h3>
                 <div class="my-info__default-box">
-
                     <div class="default-box__column">
-                        <span class="default-box__column-title">
+                        <p class="default-box__column-title">
                             시간
-                        </span>
-                        <span class="default-box__column-subtitle">
-                            00:00:00
-                        </span>
-                    </div>
-                    <div class="default-box__column">
-                        <span class="default-box__column-title">
+                        </p>
+                        <p class="default-box__column-title">
                             위치
-                        </span>
-                        <span class="default-box__column-subtitle">
-                            위치정보없음
-                        </span>
-                    </div>
-                    <div class="default-box__column">
-                        <span class="default-box__column-title">
+                        </p>
+                        <p class="default-box__column-title">
                             온도
-                        </span>
-                        <span class="default-box__column-subtitle">
-                            온도정보없음
-                        </span>
+                        </p>
+                        <p class="default-box__column-title">
+                            날씨
+                        </p>      
                     </div>
                     <div class="default-box__column">
-                        <span class="default-box__column-title">
-                            날씨
-                        </span>
-                        <span class="default-box__column-subtitle">
+                        <p class="default-box__column-subtitle time">
+                            00:00:00
+                        </p>
+                        <p class="default-box__column-subtitle locate">
+                            위치정보없음
+                        </p>
+                        <p class="default-box__column-subtitle degree">
+                            온도정보없음
+                        </p>
+                        <p class="default-box__column-subtitle weather">
                             날씨정보없음
-                        </span>
+                        </p>
                     </div>
-
+                    
                 </div>
-
+                <div class="default-box__error">
+                    <span class="alert">!</span>
+                    <span>위치 정보를 취득하지 못했습니다.</span>
+                </div>
             </div>
-
         </div>
 
-
-
+        
     </main>
 
     <div class="control-box hide">
@@ -118,8 +111,8 @@
     </div>
 
 
-
-
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
