@@ -44,6 +44,10 @@ loginBox.addEventListener("submit", function(e){
 })
 
 
+document.querySelector(".control-box").addEventListener("click", function(){
+    localStorage.removeItem("username");
+    location.reload(true);
+})
 
 
 

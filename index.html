@@ -58,23 +58,7 @@
         </div>
     </nav>
 
-    <div class="music">
-        <div class="music__column">
-            <<
-        </div>
-        <div class="music__column">
-            <div class="music__control">
-                <i class="fa-solid fa-backward"></i>
-                <div class="music__play-pause">
-                    <i class="fa-solid fa-play"></i>
-                    <!-- <i class="fa-solid fa-pause"></i> -->
-                </div>
-                <i class="fa-solid fa-forward"></i>
-            </div>
-            <h3>Music Title</h3>
-        </div>
-
-    </div>
+    
 
 
     <main>
@@ -127,7 +111,7 @@
                 <div class="quest__columns">
                     <h1 class="quest__input-title">오늘의 퀘스트를 입력해주세요</h1>
                     <form action="" class="quest__input-form">
-                        <input type="text" max-length="17" class=quest__input>
+                        <input type="text" max-length="17" class=quest__input required>
                         <button class="quest__input-button">추가</button>
                     </form>
                 </div>
@@ -137,7 +121,7 @@
                         <h1>퀘스트</h1>
                     </div>
                     <div class="input-quest__contents">
-                        <ul>
+                        <ul class="input-quest__list">
 
                         </ul>
                     </div>
@@ -147,6 +131,8 @@
 
             <div class="main__main">
                 <div class="main__ahref">
+
+                    
                     <div class="main__ahref-title">
                         <h1>다른 서비스 바로가기</h1>
                     </div>
@@ -156,6 +142,25 @@
                         <a href="https://www.naver.com/" target="_blank">네이버</a>
                         <a href="https://www.netflix.com/browse" target="_blank">넷플릭스</a>
                     </div>
+
+                    <div class="music">
+                        <div class="music__column">
+                            <div class="music__control">
+                                <i class="fa-solid fa-backward"></i>
+                                <div class="music__play-pause">
+                                    <i class="fa-solid fa-play"></i>
+                                    <!-- <i class="fa-solid fa-pause"></i> -->
+                                </div>
+                                <i class="fa-solid fa-forward"></i>
+                            </div>
+                            <h3>Music Title</h3>
+                        </div>
+
+
+
+                   
+                    </div>
+ 
                 </div>
 
                 <div class="book">
@@ -189,5 +194,7 @@
     <script src="js/weather.js"></script>
     <script src="js/screen-control.js"></script>
     <script src="js/book.js"></script>
+    <script src="js/quest.js"></script>
+    <script src="js/music.js"></script>
 </body>
 </html>
