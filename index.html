@@ -143,22 +143,29 @@
                         <a href="https://www.netflix.com/browse" target="_blank">넷플릭스</a>
                     </div>
 
-                    <div class="music">
+                    <div class="music-container">
                         <div class="music__column">
+                            <audio src="music/Great Plateau.mp3" id="audio"></audio>
+
                             <div class="music__control">
-                                <i class="fa-solid fa-backward"></i>
-                                <div class="music__play-pause">
-                                    <i class="fa-solid fa-play"></i>
-                                    <!-- <i class="fa-solid fa-pause"></i> -->
-                                </div>
-                                <i class="fa-solid fa-forward"></i>
+                                
+                                <button id="prev" class="action-btn">
+                                    <i class="fa-solid fa-backward"></i>
+                                </button>
+
+                                <button id="play" class="action-btn">
+                                    <i class="fa-solid fa-play fa-lg"></i>
+                                </button>
+
+                                <button id="next" class="action-btn">
+                                    <i class="fa-solid fa-forward"></i>
+                                </button>
+                                
                             </div>
-                            <h3>Music Title</h3>
+
+                            <h3 id="music-title">Music Title</h3>
                         </div>
 
-
-
-                   
                     </div>
  
                 </div>

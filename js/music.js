@@ -1,13 +1,15 @@
-const musicContainer = document.querySelector(".music");
-const playBtn = document.querySelector(".play");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".fa-forward");
+const musicContainer = document.querySelector(".music-container");
+const playBtn = document.querySelector("#play");
+const prevBtn = document.querySelector("#prev");
+const nextBtn = document.querySelector("#next");
 
-const musicTitle = document.querySelector(".music h3");
+const musicTitle = document.querySelector("#music-title");
+
+const audio = document.getElementById('audio');
 
 const songs = [
     'Divine Beast Observation Post',
-    'Game Start',
+    'Cave',
     'Great Plateau',
     'Lost Woods',
     'Main Theme',
@@ -16,7 +18,7 @@ const songs = [
     'Lost Woods',
 ]
 
-let songIndex = 2;
+let songIndex = 0;
 
 loadSong(songs[songIndex]);
 
@@ -26,28 +28,55 @@ function loadSong(song){
 }
 
 
-audio.play();
 
-// function playSong(){
-//     musicContainer.classList.add('play');
-//     playBtn.querySelector(".music__play-pause").classList.remove('fa-play');
-//     playBtn.querySelector(".music__play-pause").classList.add('fa-pause');
-//     audio.play();
-// }
+function playSong(){
+    musicContainer.classList.add('play');
+    playBtn.querySelector("i").classList.remove('fa-play');
+    playBtn.querySelector("i").classList.add('fa-pause');
+    audio.play();
+}
 
-// function pauseSong(){
-//     musicContainer.classList.remove('play');
-//     playBtn.querySelector(".music__play-pause").classList.add('fa-play');
-//     playBtn.querySelector(".music__play-pause").classList.remove('fa-pause');
-//     audio.pause();
-// }
+function pauseSong(){
+    musicContainer.classList.remove('play');
+    playBtn.querySelector("i").classList.add('fa-play');
+    playBtn.querySelector("i").classList.remove('fa-pause');
+    audio.pause();
+}
 
-// playBtn.addEventListener("click", function(){
-//     const isPlaying = musicContainer.classList.contains('play');
-//     if (isPlaying){
-//         pauseSong();
-//     } else {
-//         playSong();
-//     }
-// })
+function prevSong(){
+    songIndex --;
+    if (songIndex<0){
+        songIndex = songs.length - 1;
+    }
+
+    loadSong(songs[songIndex]);
+
+    playSong();
+}
+
+function nextSong (){
+    songIndex ++;
+
+    if (songIndex > songs.length -1){
+        songIndex = 0;
+    }
+
+    loadSong(songs[songIndex]);
+
+    playSong();
+}
+
+playBtn.addEventListener("click", function(){
+    const isPlaying = musicContainer.classList.contains('play');
+    if (isPlaying){
+        pauseSong();
+    } else {
+        playSong();
+    }
+})
+
+prevBtn.addEventListener("click", prevSong);
+nextBtn.addEventListener("click", nextSong);
+
+audio.addEventListener("ended", nextSong);
 
