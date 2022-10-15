@@ -39,7 +39,7 @@ loginBox.addEventListener("submit", function(e){
         navbar.classList.remove('hide');
         controlBox.classList.remove('hide');
         mainScreen.classList.add('show');
-        welcom(savedUsername)
+        welcom(savedUsername);
     }
 })
 

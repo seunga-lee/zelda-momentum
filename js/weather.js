@@ -1,3 +1,5 @@
+const weatherError = new Audio("sound/SE_AMIIBO_ERROR.wav");
+
 const API_KEY = "e7cb4c6a33c37c591c60e87ef674322c";
 
 function onGeoOk(position){
@@ -17,6 +19,7 @@ function onGeoOk(position){
 
 function onGeoError(){
     document.querySelector(".defalut-box__error").classList.add('show');
+    weatherError.play();
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
