@@ -8,13 +8,12 @@ const musicTitle = document.querySelector("#music-title");
 const audio = document.getElementById('audio');
 
 const songs = [
+    'Main Theme',
     'Divine Beast Observation Post',
     'Cave',
     'Great Plateau',
     'Lost Woods',
-    'Main Theme',
     'Memories of a Sacred Sword',
-    'Opening',
     'Lost Woods',
 ]
 
